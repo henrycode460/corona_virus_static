@@ -2,7 +2,7 @@
 
 const CoronaVirus = () => {
   return (
-    <div>CoronaVirus</div>
+    <div><h1>CoronaVirus</h1></div>
   )
 }
 

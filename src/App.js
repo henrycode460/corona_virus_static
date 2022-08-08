@@ -1,11 +1,34 @@
+import React from 'react';
 import './style.css';
+import {  Route, Routes } from 'react-router-dom';
 
-function App() {
-  return (
-    <div>
-      <h1>Hello React Capston</h1>
-    </div>
-  );
+import Header from './Components/Header'
+import CoronaVirusDetails from './Components/CoronaVirusDetails';
+import CoronaVirus from './Components/CoronaVirus';
+
+
+class App extends React.Component {
+  render() {
+    return (
+  
+      <>
+        <Header />
+
+        <div >
+
+          <Routes>
+            <Route path="/CoronaVirus" element={<CoronaVirus />} />
+            <Route index element={<CoronaVirus />} />
+            <Route path="/CoronaVirusDetails" element={<CoronaVirusDetails />} />
+            
+          </Routes>
+
+        </div>
+
+      </>
+   
+    );
+  }
 }
 
 export default App;
