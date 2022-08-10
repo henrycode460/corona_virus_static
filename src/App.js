@@ -17,9 +17,9 @@ class App extends React.Component {
         <div >
 
           <Routes>
-            <Route path="/CoronaVirus" element={<CoronaVirus />} />
-            <Route index element={<CoronaVirus />} />
-            <Route path="/CoronaVirusDetails" element={<CoronaVirusDetails />} />
+            <Route path="/" exact element={<CoronaVirus />} />
+            
+            <Route path="/CoronaVirusDetails/:code" element={<CoronaVirusDetails />} />
             
           </Routes>
 

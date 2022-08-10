@@ -1,9 +1,22 @@
- import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const CoronaVirusList = () => {
+
+
+const CoronaVirusList = ({ country}) => {
+    const { code } = country;
   return (
-    <div>CoronaVirusList</div>
-  )
-}
+    <div >
+      
+      <div>
+        <h3>{country.name}</h3>
+        <p>{country.population}</p>
+        <Link to={`CoronaVirusDetails/${code}`} state={{country}}>
+       <button>click</button>
+       </Link>
+      </div>
+    </div>
+  );
+};
 
-export default CoronaVirusList
+export default CoronaVirusList;
