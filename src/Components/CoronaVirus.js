@@ -6,6 +6,7 @@ import CoronaVirusList from './CoronaVirusList';
 
 
 
+
 function CoronaVirus () {
   const dispatch = useDispatch();
  
@@ -18,23 +19,16 @@ function CoronaVirus () {
   
 
   return (
-    <>
-        <ul>
+    <div className='wrapper'>
+       
         {
          countries?.data?.map(country =>(
-        //  <li key={country.code}>{country.name}: {country.population}</li>
+     
         <CoronaVirusList key={country.code} country={country}/>
           ))
         }
-      </ul>
-
-
-     {/* {countries.loading && <div>loading...</div>}
-     {!countries.loading && countries.error ? <div>Error: {countries.error}</div> : null}
-     {!countries.loading && countries.countries.lenght ?(
-   
-     ) : null} */}
-     </>
+ 
+     </div>
   );
 }
 
