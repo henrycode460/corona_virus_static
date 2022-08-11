@@ -1,22 +1,17 @@
 .heading {
- background-color:#ec4c8a;
- display: flex;
- align-items: center;
- height: 100px;
- width: 100%;
-margin: 0 auto;
-
-
+  background-color: #ec4c8a;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .logoStyle {
   font-family: Montserrat, sans-serif;
   font-size: 1.875rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   padding: 15px 20px;
 }
-
-
-

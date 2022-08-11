@@ -4,9 +4,6 @@ import { getCountries } from '../Redux/CoronaVirus';
 import CoronaVirusList from './CoronaVirusList';
 
 
-
-
-
 function CoronaVirus () {
   const dispatch = useDispatch();
  
