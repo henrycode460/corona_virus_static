@@ -6,9 +6,9 @@ import { FaArrowRight} from "react-icons/fa";
 
 
 const CoronaVirusList = ({ country}) => {
-  const colors = ["#918e8e8a", " rgb(147 146 146)", '#ec4c8a', "#f076a5" ];
 
-  // pick random color from colors
+ const colors = ["#918e8e8a", " rgb(147 146 146)", '#ec4c8a', "#f076a5" ];
+// pick random color from colors
   const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
   const Colorstyle = {
@@ -17,7 +17,13 @@ const CoronaVirusList = ({ country}) => {
   };
 
     const { code } = country;
+
+  
+
+   
   return (
+    <>
+    
     
       <div className='mainContainer '> 
       <div style={Colorstyle} className='container '>
@@ -31,6 +37,7 @@ const CoronaVirusList = ({ country}) => {
       </div>
     </div>
     </div>
+    </>
   );
 };
 
