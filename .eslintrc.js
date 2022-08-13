@@ -1,7 +1,8 @@
 module.exports = { // eslint-disable-line
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "extends": [
         "eslint:recommended",
